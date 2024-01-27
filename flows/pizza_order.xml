@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<mxfile>
+  <diagram>
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- User Opens Pizza Ordering App -->
+        <mxCell id="2" value="U: Opens Pizza Ordering App" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="50" width="240" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Displays Welcome Screen -->
+        <mxCell id="3" value="S: Displays Welcome Screen" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="110" width="240" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Selects Order Pizza -->
+        <mxCell id="4" value="U: Selects Order Pizza" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="170" width="240" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Displays Pizza Menu -->
+        <mxCell id="5" value="S: Displays Pizza Menu" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="230" width="240" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Chooses Pizza Type -->
+        <mxCell id="6" value="U: Chooses Pizza Type - Margherita" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="290" width="280" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Selects Size -->
+        <mxCell id="7" value="U: Selects Size - Medium" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="350" width="260" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Adds Toppings -->
+        <mxCell id="8" value="U: Adds Toppings - Olives, Extra Cheese" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="410" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Confirms Pizza Selection -->
+        <mxCell id="9" value="U: Confirms Pizza Selection" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="470" width="260" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Displays Order Summary & Checkout Screen -->
+        <mxCell id="10" value="S: Displays Order Summary &amp; Checkout Screen" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="530" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Enters Delivery Address, Chooses Payment Method, Confirms Payment -->
+        <mxCell id="11" value="U: Completes Checkout" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="590" width="240" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Processes Payment, Confirms Order, Shows Confirmation -->
+        <mxCell id="12" value="S: Processes Payment &amp; Confirms Order" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="670" width="320" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Notifies Customer Pizza is on the Way -->
+        <mxCell id="13" value="N: Notifies Customer Pizza is on the Way" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="750" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Delivery Person Rings Doorbell -->
+        <mxCell id="14" value="S: Delivery Person Rings Doorbell" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="810" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- User Opens Door, Confirms Receipt -->
+        <mxCell id="15" value="U: Opens Door &amp; Confirms Receipt" style="text;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="870" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Connectors -->
+        <!-- Connect each step with a line -->
+        <!-- Example Connector from Step 1 to Step 2 -->
+        <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="2" target="3"/>
+        <!-- Repeat for other steps -->
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
