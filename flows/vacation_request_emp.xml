@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram>
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Employee Lane -->
+        <mxCell id="employeeLane" value="Employee Lane" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="50" width="240" height="360" as="geometry"/>
+        </mxCell>
+        
+        <!-- Employee Steps -->
+        <mxCell id="employeeLogin" value="Employee Login" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="employeeLane" vertex="1">
+          <mxGeometry y="30" width="200" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="submitRequest" value="Submit Time Off Request" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="employeeLane" vertex="1">
+          <mxGeometry y="90" width="200" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="awaitingApproval" value="Awaiting Approval Notification" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="employeeLane" vertex="1">
+          <mxGeometry y="150" width="200" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Manager Lane -->
+        <mxCell id="managerLane" value="Manager Lane" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="320" y="50" width="240" height="360" as="geometry"/>
+        </mxCell>
+        
+        <!-- Manager Steps -->
+        <mxCell id="receiveNotification" value="Receive Time Off Request Notification" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="managerLane" vertex="1">
+          <mxGeometry y="30" width="200" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="reviewRequest" value="Review Time Off Request" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="managerLane" vertex="1">
+          <mxGeometry y="90" width="200" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="approveRequest" value="Approve Request" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="managerLane" vertex="1">
+          <mxGeometry y="150" width="200" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Connectors -->
+        <mxCell id="connector1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="employeeLogin" target="submitRequest">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="100" as="sourcePoint"/>
+            <mxPoint x="180" y="130" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="connector2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="submitRequest" target="awaitingApproval">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="130" as="sourcePoint"/>
+            <mxPoint x="180" y="160" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="connector3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="receiveNotification" target="reviewRequest">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="100" as="sourcePoint"/>
+            <mxPoint x="440" y="130" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="connector4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="reviewRequest" target="approveRequest">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="130" as="sourcePoint"/>
+            <mxPoint x="440" y="160" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
